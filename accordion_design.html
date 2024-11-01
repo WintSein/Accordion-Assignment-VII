@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elements of the Periodic Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+      .accordion-button {
+        font-weight: bold;
+        border-radius: 8px;
+      }
+
+      .element-image {
+        width: 100%;
+        max-width: 150px;
+        border-radius: 8px;
+      }
+      .accordion-item {
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .accordion-body{
+      display: flex;
+        align-items: center;
+      }
+      .accordion-button:hover{
+        background-color: #6888a3;
+      }
+      .accordion-button:focus{
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Elements of the Periodic Table</h2>
+      <div class="accordion" id="elementsAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="diamondHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#diamondCollapse" aria-expanded="false" aria-controls="diamondCollapse">
+              Diamond
+            </button>
+          </h2>
+          <div id="diamondCollapse" class="accordion-collapse collapse" aria-labelledby="diamondHeading">
+            <div class="accordion-body">
+              <img src="https://www.chemistrylearner.com/wp-content/uploads/2018/09/Carbon-Symbol.jpg" alt="Diamond" class="element-image" />
+              <p>
+                Diamond is a form of carbon, and it is the hardest natural
+                material known. Diamonds are highly valued for their brilliance
+                and beauty.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="goldHeading">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#goldCollapse"
+              aria-expanded="false"
+              aria-controls="goldCollapse">
+              Gold
+            </button>
+          </h2>
+          <div  id="goldCollapse"
+            class="accordion-collapse collapse"  aria-labelledby="goldHeading" >
+            <div class="accordion-body">
+              <img
+                src="https://www.chemistrylearner.com/wp-content/uploads/2018/08/Gold-Symbol-300x300.jpg"
+                alt="Gold"
+                class="element-image"/>
+              <p>
+                Gold is a precious metal with high economic and cultural value.
+                It is soft, shiny, and malleable, often used in jewelry and
+                electronics.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="silverHeading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#silverCollapse"
+                aria-expanded="false"
+                aria-controls="silverCollapse"
+              >
+                Silver
+              </button>
+            </h2>
+            <div
+              id="silverCollapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="silverHeading"
+            >
+              <div class="accordion-body">
+                <img
+                  src="https://www.chemistrylearner.com/wp-content/uploads/2018/10/Silver-Symbol.jpg"
+                  alt="Silver"
+                  class="element-image"
+                />
+                <p>
+                  Silver is a soft, white, lustrous metal with the highest
+                  electrical and thermal conductivity of any metal. It is often
+                  used in coins, jewelry, and electronics.
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="platinumHeading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#platinumCollapse"
+                aria-expanded="false"
+                aria-controls="platinumCollapse"
+              >
+                Platinum
+              </button>
+            </h2>
+            <div
+              id="platinumCollapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="platinumHeading"
+            >
+              <div class="accordion-body">
+                <img
+                  src="https://www.chemistrylearner.com/wp-content/uploads/2018/08/Platinum-Symbol-300x300.jpg"
+                  alt="Platinum"
+                  class="element-image"
+                />
+                <p>
+                  Platinum is a dense, malleable, and highly unreactive metal. It
+                  is used in jewelry, medical equipment, and as a catalyst in
+                  chemical reactions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
